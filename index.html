@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./assets/images/favicon-32x32.png"
+		/>
+
+		<title>Frontend Mentor | Contact form</title>
+
+		<link rel="stylesheet" href="style.css" />
+		<script defer src="index.js"></script>
+		<style>
+			.attribution {
+				font-size: 11px;
+				text-align: center;
+				display: none;
+			}
+			.attribution a {
+				color: hsl(228, 45%, 44%);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="success-box">
+			<div class="approval">
+				<img src="assets/images/icon-success-check.svg" /> Message Sent!
+			</div>
+			<p class="thanks">
+				Thanks for completing the form. We'll be in touch soon!
+			</p>
+		</div>
+		<section class="section">
+			<h1 class="heading">Contact Us</h1>
+
+			<form class="contact-form">
+				<div class="full-name-box">
+					<div class="input-box name-box">
+						<label class="label" for="name">First Name</label>
+						<input
+							type="text"
+							required="This field is required"
+							class="input input-name"
+							id="name"
+						/>
+						<label class="error"></label>
+					</div>
+
+					<div class="input-box last-name-box">
+						<label class="label" for="last-name">Last Name</label>
+						<input
+							type="text"
+							required="This field is required"
+							class="input input-last-name"
+							id="last-name"
+						/>
+						<label class="error"></label>
+					</div>
+				</div>
+
+				<div class="input-box email-box">
+					<label class="label" for="name">Email Address</label>
+					<input
+						id="email"
+						class="input input-email"
+						required="Please enter a valid email address This field is required"
+						type="email"
+					/>
+					<label class="error"></label>
+				</div>
+
+				<div class="input-box query-type">
+					<label class="label" for="query">Query Type</label>
+					<div class="query">
+						<label class="general-query" for="enquiry">
+							<input
+								type="checkbox"
+								id="enquiry"
+								class="checkbox input-enquiry"
+								value="enquiry"
+							/>
+							General Enquiry</label
+						>
+
+						<label class="support-request" for="request">
+							<input
+								type="checkbox"
+								id="request"
+								class="checkbox input-request"
+								value="request"
+							/>
+							Support Request</label
+						>
+					</div>
+					<label class="error cb-error"></label>
+				</div>
+				<div class="input-box message-box">
+					<label class="label" for="message">Message</label>
+					<input
+						type="text"
+						required="This field is required"
+						class="input input-message"
+						id="message"
+					/>
+					<label class="error"></label>
+				</div>
+
+				<div class="consent-box">
+					<div class="consent-input">
+						<input
+							type="checkbox"
+							required="To submit this form, please consent to being contacted"
+							id="consent"
+						/>
+
+						<label class="label" for="consent">
+							I hereby consent to being contacted by the team
+						</label>
+					</div>
+					<label class="error"></label>
+				</div>
+
+				<button class="btn submit">Submit</button>
+			</form>
+		</section>
+		<div class="attribution">
+			Challenge by
+			<a href="https://www.frontendmentor.io?ref=challenge"
+				>Frontend Mentor</a
+			>. Coded by <a href="#">Your Name Here</a>.
+		</div>
+	</body>
+</html>
